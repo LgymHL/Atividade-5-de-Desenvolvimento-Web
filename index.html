@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semana 05 — Objetos, Dados e Assincronismo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container-principal">
+    <header class="pokedex-topo">
+    <img src="pokebola/Poké_Ball_icon.svg.webp" class="pokebola"/>
+      <h1 class="titulo-principal">Pokédex e localizador de CEP</h1>
+    </header>
+
+    <section class="dex" id="secao-cep">
+      <h2>Buscador de CEP</h2>
+      <div class="tela">
+        <form id="formulario-cep" class="form-dex">
+          <input type="text" id="input-cep" placeholder="Digite o CEP" maxlength="8" />
+          <button type="submit" id="botao-cep">Buscar</button>
+        </form>
+        <p id="status-cep" class="status"></p>
+        <dl id="resultado-cep"></dl>
+        <ul id="historico-cep"></ul>
+      </div>
+    </section>
+
+    <section class="dex" id="secao-pokedex">
+      <h2>Mini Pokédex</h2>
+      <div class="tela">
+        <form id="formulario-pokemon" class="form-dex">
+          <input type="text" id="input-pokemon" placeholder="Nome do Pokémon" />
+          <button type="submit" id="botao-pokemon">Buscar</button>
+        </form>
+        <p id="status-pokemon" class="status"></p>
+        <div id="resultado-pokemon"></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
